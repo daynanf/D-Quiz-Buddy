@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+  <link rel="stylesheet" href="/styles/generate-quiz.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>D Quiz | AI Powered Quiz Generator</title>
+</head>
+<body>
+   <header>
+    <nav>
+      <a href="home.html"><div class="logo"><img id="d-quiz-logo" src="assets/D Quiz logo.png" alt="D Quiz Logo">D Quiz Buddy</div></a>
+        <ui>
+          <li class="login-btn">Login</li>
+          <li class="signup-btn">Signup</li>
+        </ui>
+    </nav>
+  </header>
+  <main>
+    <section class="header">
+        <h1>Create Your Quiz</h1>
+        <p>Upload a document or paste your content to generate quiz questions</p>
+    </section>  
+    <section class="quiz-option-sec">
+      <div class="quiz-option-title">
+        <h2><i class="fa fa-cog"></i>Quiz Options</h2>
+      </div>
+      <div class="quiz-options">
+        <div><label for="number-of-question">Number of Question</label>
+        <select name="number-of-question" id="number-of-question">
+            <option value="3">3 Question</option>
+            <option value="5">5 Question</option>
+            <option value="10">10 Question</option>
+        </select>
+        </div>
+        <div><label for="difficulty">Difficulty</label>
+        <select name="difficulty" id="difficulty">
+            <option value="easy">easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        </div>
+        <div><label for="question-type">Question Type</label>
+        <select name="question-type" id="question-type">
+            <option value="true-false">True/False</option>
+            <option value="multiple-choice">Multiple Choice</option>
+            <option value="short-answer">Short Answer</option>
+        </select>
+        </div>
+      </div>
+    </section>
+    <section class="content-input-sec">
+      <h2><i class="fa-regular fa-file-lines"></i>Content Input</h2>
+      <div class="input-type">
+        <button class="file-upload-type"><i class="fa fa-upload"></i>Upload File</button>
+        <button class="text-type"><i class="fa fa-text-height"></i>Enter Text</button>
+      </div>
+      <form action="post">
+        <div class="content-upload">
+          <div class="upload-file">
+            <label for="file" id="drag-drop-label">
+              <input type="file" id="file" placeholder="Drag and dropa file here " hidden>
+              <div class="drag-drop-section">
+                <i class="fa fa-upload"></i>
+                <h4>Drag & drop a file here, or click to upload</h4>
+                <p>supports: Text files , PDF documents</p>
+              </div>
+            </label>
+          </div>
+          <div class="enter-text">
+            <label for="text-area">Paste your content here</label>
+            <textarea name="entered-text" id="text-area" placeholder="Enter a text you want to create quiz from..."></textarea>
+          </div>
+        </div>
+      </form>
+        <div class="back-generate-btns">
+          <button class="back-btn"><a href="home.html">Back</a></button></a>
+          <button class="generate-quiz-btn"><a href="">Generate Quiz</a></button>
+        </div>
+    </section>
+  </main>
+</body>
+</html>

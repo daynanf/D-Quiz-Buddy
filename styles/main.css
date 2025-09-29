@@ -1,0 +1,357 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body ,main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family:'roboto', sans-serif;
+}
+header{
+  width:100%;
+  border-bottom: 1px solid rgb(221, 221, 221); 
+  background-color: rgba(rgb(255, 255, 255), 0.95); 
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+
+@supports (backdrop-filter: blur(0)) {
+  header {
+    background-color: rgba(rgb(255, 255, 255), 0.6); 
+  }
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  list-style: none;
+  margin: 5px 4.7rem;
+}
+.logo{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+header a{
+  display: block;
+  color:black;
+  margin: auto 0px;
+}
+nav ui{
+  height:60px;
+  display: flex;
+  align-items: center;
+  gap: 3.75rem;
+}
+nav ui li{
+  font-size: 0.9rem;
+ padding: 10px;
+ align-items: center;
+}
+.signup-btn{
+  color:aliceblue;
+  background:linear-gradient( to right, #5b12f7, #8149f9);
+  border-radius: 5px;
+}
+nav ui li:hover{
+  background-color: rgb(217, 222, 222);
+  border-radius: 5px;
+  transition:ease-in-out 0.2s;
+  cursor: pointer;
+}
+.signup-btn:hover{
+  scale:1.1;
+  transition:ease-in-out 0.2s;
+  cursor: pointer;
+}
+.logo:hover{
+   opacity: 0.5;
+   cursor: pointer;
+}
+#d-quiz-logo{
+ height: 50px;
+}
+.hero-sec{
+  width:60rem;
+  margin: 2rem 0px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hero-sec h1{
+  font-size:4rem;
+  width:59rem;
+  text-align: center;
+}
+.hero-sec h1 span{
+ background-image :linear-gradient( to right, #5b12f7, #8149f9);
+ background-clip: text;
+ color: transparent;
+}
+.hero-sec p{
+  text-align: center;
+  color:#747794;
+  font-size: 1.25rem;
+  width: 50.6rem;
+}
+@keyframes fade {
+  0% { opacity: 0.6; }   
+  50% { opacity: 1; 
+  scale:0.9;} 
+  100% { opacity: 0.4;   } 
+}
+
+.hero-sec img {
+  height:12.5rem;
+  animation-name: fade;         
+  animation-duration: 4s;       
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out; 
+}
+.hero-btn{
+   width:59rem;
+   height:4.3rem;
+   display:flex;
+   justify-content: space-around;
+   margin:10px;
+}
+a{
+  color:aliceblue;
+  text-decoration: none;
+}
+.hero-sec button{
+  color:aliceblue;
+  background:linear-gradient( to right, #5b12f7, #8149f9);
+  border-radius: 7px;
+  width:19rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+}
+.hero-sec button:hover{
+  scale:1.1;
+  transition:ease-in-out 0.2s;
+  cursor: pointer;
+}
+.about-sec-container{
+  width:56rem;
+  display:flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.about-card{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(236, 235, 235) ;
+  height: 13.75rem;
+  width: 12.5rem;
+  box-shadow: 0px 0px 2px 0px #d9dae9;
+  border-radius: 5px;
+}
+i{
+  font-size: 1.5rem;
+  padding:1.25rem;
+  margin:1rem 0.63rem 0.63rem 0.63rem;
+  color:#8149f9;
+  background-color: #e7def9;
+  border-radius: 50%;
+}
+.about-card h3{
+  margin: 0.63rem 1rem;
+  text-align: center;
+}
+.about-card p{
+  font-weight: 400;
+  text-align: center;
+  color:#797c97;
+  font-size: 0.81rem;
+  margin: 0px 0.63rem;
+  padding: 0px 5px;
+}
+.about-card:hover{
+  box-shadow:   0px 2px 10px 1px #c3aaf8 ;
+  transition: box-shadow 0.3s ease;
+  scale:1.01;
+}
+.cta-sec{
+  margin:2rem 0rem;
+  width:56rem;
+  height: 15.6rem;
+  background:linear-gradient( to right, #5b12f7, #8149f9);
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  gap: 2rem;
+}
+.cta-sec button{
+  background-color: aliceblue;
+  border:none;
+  width: 15rem;
+  height:3.1rem;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.cta-sec button a{
+  color: rgb(58, 60, 61);
+}
+.cta-sec button:hover{
+  scale:1.05;
+  transition:ease-in-out 0.2s;
+  cursor: pointer;
+  background-color: #d9dae9;
+}
+
+@media(max-width:1000px){
+  .hero-sec img{
+    height:10rem;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  .about-sec-container{
+    flex-wrap: wrap;
+  }
+  .about-card{
+    width:24rem;
+  }
+  i{
+    margin:1.5rem 0.63rem 0.63rem 0.63rem;;
+    font-size: 2rem;
+  }
+  .cta-sec{
+    width:51rem;
+  }
+}
+@media(max-width:930px){
+  html{
+    font-size:85%;
+  }
+  .hero-sec img{
+    height:16rem;
+  }
+}
+@media(max-width:790px){
+  html{
+    font-size:70%;
+  }
+  .logo{
+   font-size: 18px;
+  }
+  .login-btn ,.signup-btn {
+    font-size:16px;
+  }
+  .about-card{
+    width:45rem;
+    border-radius: 7px;
+  }
+  i{
+    margin:1.5rem 0.63rem 0.63rem 0.63rem;;
+    font-size: 30px;
+  }
+  .about-card h3{
+    font-size: 15px; 
+  }
+  .about-card p{
+    font-size:11px;
+  }
+  .cta-sec{
+    width:45rem;
+  }
+  .cta-sec p{
+ font-size:14px;
+  }
+  .cta-sec h2{
+    font-size: 18px;
+    padding-top:30px;
+  }
+  .cta-sec button{
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  .hero-sec img{
+    height:16rem;
+  }
+}
+
+@media(max-width:670px){
+  .hero-sec h1{
+    width:50rem;
+  }
+  .hero-sec img{
+    height:16rem;
+  }
+  .hero-sec p{
+    width:45rem;
+  }
+}
+@media(max-width:560px){
+ nav{
+  margin:5px 2rem;
+ }
+  .hero-sec h1{
+    width:45rem;
+  }
+  .hero-sec img{
+    height:14rem;
+  }
+  .hero-sec p{
+    width:40rem;
+  }
+  .about-card ,.cta-sec{
+    width:35rem;
+  }
+  .cta-sec{
+    gap:1.5rem;
+  }
+  .cta-sec p{
+    width:28rem;
+    text-align: center;
+  }
+}
+@media(max-width:460px){
+.hero-sec h1{
+    width:32rem;
+  }
+  .hero-sec p{
+    width:26rem;
+  }
+  .about-card{
+    width:28rem;
+  }
+  .cta-sec{
+    width:28rem;
+    gap:1rem;
+  }
+  .cta-sec p{
+    width:22rem;
+    text-align: center;
+  }
+  .cta-sec button{
+    margin-top: 15px;
+  }
+}
+@media(max-width:340px){
+  html{
+    font-size:60%;
+  }
+}
