@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body ,main {
   display: flex;
   flex-direction: column;
@@ -61,7 +62,8 @@ nav ui li{
 }
 .signup-btn{
   color:aliceblue;
-  background:linear-gradient( to right, #5b12f7, #8149f9);
+  background:linear-gradient( to right, #02ee97
+);
   border-radius: 5px;
 }
 nav ui li:hover{
@@ -97,7 +99,8 @@ nav ui li:hover{
   text-align: center;
 }
 .hero-sec h1 span{
- background-image :linear-gradient( to right, #5b12f7, #8149f9);
+ background-image :linear-gradient( to right, #02ee97
+);
  background-clip: text;
  color: transparent;
 }
@@ -108,14 +111,14 @@ nav ui li:hover{
   width: 50.6rem;
 }
 @keyframes fade {
-  0% { opacity: 0.6; }   
+  0% { opacity: 0.7; }   
   50% { opacity: 1; 
   scale:0.9;} 
-  100% { opacity: 0.4;   } 
+  100% { opacity: 0.5;   } 
 }
 
 .hero-sec img {
-  height:12.5rem;
+  height:15rem;
   animation-name: fade;         
   animation-duration: 4s;       
   animation-iteration-count: infinite; 
@@ -134,7 +137,8 @@ a{
 }
 .hero-sec button{
   color:aliceblue;
-  background:linear-gradient( to right, #5b12f7, #8149f9);
+  background:linear-gradient( to right, #02ee97
+);
   border-radius: 7px;
   width:19rem;
   font-size: 1.5rem;
@@ -156,7 +160,7 @@ a{
   display:flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgb(236, 235, 235) ;
+  border: 0px solid rgb(236, 235, 235) ;
   height: 13.75rem;
   width: 12.5rem;
   box-shadow: 0px 0px 2px 0px #d9dae9;
@@ -166,8 +170,9 @@ i{
   font-size: 1.5rem;
   padding:1.25rem;
   margin:1rem 0.63rem 0.63rem 0.63rem;
-  color:#8149f9;
-  background-color: #e7def9;
+  color:#02ee97;
+  background-color: #d3ffef
+;
   border-radius: 50%;
 }
 .about-card h3{
@@ -183,7 +188,7 @@ i{
   padding: 0px 5px;
 }
 .about-card:hover{
-  box-shadow:   0px 2px 10px 1px #c3aaf8 ;
+  box-shadow:   0px 5px 30px -3px #dfc4f8 ;
   transition: box-shadow 0.3s ease;
   scale:1.01;
 }
@@ -191,7 +196,7 @@ i{
   margin:2rem 0rem;
   width:56rem;
   height: 15.6rem;
-  background:linear-gradient( to right, #5b12f7, #8149f9);
+  background:linear-gradient( to right, #02ee97);
   border-radius: 10px;
   display:flex;
   flex-direction: column;
