@@ -3,6 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* colors
+primary--- #02ee97
+secondary ---#9fdee8
+3rd-- #fdd38a
+4th --#f2bffe
+5th---#F3E5AB
+6th ---#fc9e84
+ */
+
 
 body ,main {
   display: flex;
