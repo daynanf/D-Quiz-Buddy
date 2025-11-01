@@ -131,17 +131,24 @@ nav ui li:hover{
    width:59rem;
    height:4.3rem;
    display:flex;
-   justify-content: space-around;
+   justify-content: center;
    margin:10px;
 }
 a{
   color:aliceblue;
   text-decoration: none;
 }
-.hero-sec button{
+.hero-sec a{
   color:aliceblue;
-  background:linear-gradient( to right, #27c8a3
-);
+  text-decoration: none;
+  display:block;
+  height: 100%;
+}
+.hero-sec button{
+  display:block;
+  height: 100%;
+  color:aliceblue;
+  background:linear-gradient( to right, #27c8a3);
   border-radius: 7px;
   width:19rem;
   font-size: 1.5rem;
