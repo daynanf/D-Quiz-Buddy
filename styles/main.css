@@ -445,6 +445,7 @@ i{
   }
   .about-sec-container{
     flex-wrap: wrap;
+    width:40rem;
   }
 }
 @media(max-width:340px){
