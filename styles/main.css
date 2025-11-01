@@ -255,13 +255,29 @@ i{
   top: 100px;
   right:300px;
 }
+@media(max-width:1300px){
+  .icon-1{
+  top: 250px;
+  right:300px;
+}
+.icon-2{
+  top: 250px;
+  left:300px;
+}
+.icon-3{
+  top:100px;
+  left:200px;
+}
+.icon-4{
+  top: 100px;
+  right:200px;
+}
+}
 @media(max-width:1000px){
   .hero-sec img{
     height:10rem;
   }
-  h1{
-    font-size: 3.5rem;
-  }
+  
   .about-sec-container{
     flex-wrap: wrap;
   }
@@ -275,6 +291,26 @@ i{
   .cta-sec{
     width:51rem;
   }
+  .quiz-icons img{
+  height: 70px;
+  width:70px;
+}
+  .icon-1{
+  top: 250px;
+  right:200px;
+}
+.icon-2{
+  top: 250px;
+  left:200px;
+}
+.icon-3{
+  top:100px;
+  left:100px;
+}
+.icon-4{
+  top: 100px;
+  right:100px;
+}
 }
 @media(max-width:930px){
   html{
@@ -283,6 +319,26 @@ i{
   .hero-sec img{
     height:16rem;
   }
+   .quiz-icons img{
+  height: 70px;
+  width:70px;
+}
+  .icon-1{
+  top: 250px;
+  right:200px;
+}
+.icon-2{
+  top: 250px;
+  left:200px;
+}
+.icon-3{
+  top:100px;
+  left:100px;
+}
+.icon-4{
+  top: 100px;
+  right:100px;
+}
 }
 @media(max-width:790px){
   html{
@@ -325,6 +381,9 @@ i{
   }
   .hero-sec img{
     height:16rem;
+  }
+  .quiz-icons{
+    display:none;
   }
 }
 
@@ -384,10 +443,14 @@ i{
   .cta-sec button{
     margin-top: 15px;
   }
+  .about-sec-container{
+    flex-wrap: wrap;
+  }
 }
 @media(max-width:340px){
   html{
     font-size:60%;
   }
+
 }
 
