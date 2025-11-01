@@ -104,8 +104,7 @@ nav ui li:hover{
   text-align: center;
 }
 .hero-sec h1 span{
- background-image :linear-gradient( to right, #27c8a4
-);
+ background-image :linear-gradient( to right, #27c8a4);
  background-clip: text;
  color: transparent;
 }
@@ -125,7 +124,7 @@ nav ui li:hover{
 .hero-sec .d-quiz-main-logo img {
   height:15rem;
   animation-name: fade;         
-  animation-duration: 4s;       
+  animation-duration: 8s;       
   animation-iteration-count: infinite; 
   animation-timing-function: ease-in-out; 
 }
@@ -156,7 +155,7 @@ a{
   cursor: pointer;
 }
 .about-sec-container{
-  width:56rem;
+  width:58rem;
   display:flex;
   justify-content: center;
   gap: 2rem;
@@ -229,7 +228,33 @@ i{
   cursor: pointer;
   background-color: #d9dae9;
 }
-
+.quiz-icons{
+  position: absolute;
+  animation-name: fade;         
+  animation-duration: 4s;       
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out; 
+}
+.quiz-icons img{
+  height: 100px;
+  width:100px;
+}
+.icon-1{
+  top: 250px;
+  right:400px;
+}
+.icon-2{
+  top: 250px;
+  left:400px;
+}
+.icon-3{
+  top:100px;
+  left:300px;
+}
+.icon-4{
+  top: 100px;
+  right:300px;
+}
 @media(max-width:1000px){
   .hero-sec img{
     height:10rem;
@@ -366,6 +391,3 @@ i{
   }
 }
 
-.hero-sec .quiz-icon img {
-  height:30px;
-}
