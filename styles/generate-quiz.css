@@ -20,7 +20,7 @@
 }
 .quiz-option-sec{
   width: 700px;
-  border: 1px solid rgb(221, 221, 221);
+  border: 3px solid rgb(221, 221, 221);
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -63,17 +63,17 @@
   width:100%;
   padding:10px;
   margin: 7px  0px;
-  border: 1px solid rgb(221, 221, 221);
+  border: 3px solid rgb(221, 221, 221);
   border-radius: 5px;
   outline:none;
 }
 .quiz-options select:focus{
-  border: 3px solid #5b12f7;
+  border: 3px solid #27c8a4;
 }
 .content-input-sec{
   margin-top: 20px;
   margin-bottom: 30px;
-  border: 1px solid rgb(221, 221, 221);
+  border: 3px solid rgb(221, 221, 221);
   width: 700px;
   border-radius: 5px;
 }
@@ -129,8 +129,8 @@
  border-radius: 5px;
 }
 #drag-drop-label:hover{
-  border: 3px dashed #5b12f7;
-  color:#5b12f7;
+  border: 3px dashed #27c8a4;
+  color:#27c8a4;
 }
 .drag-drop-section{
   height: 100%;
@@ -156,7 +156,7 @@
   font-size: 12px;
 }
 .drag-drop-section:hover{
-  color:#5b12f7;
+  color:#27c8a4;
   background-color: aliceblue;
 }
 .enter-text{
@@ -177,12 +177,12 @@
   resize:none;
 }
 #text-area:hover{
-   border: 3px solid #5b12f7;
+   border: 3px solid #27c8a4;
   background-color: rgb(250, 250, 250);
 }
 
 #text-area:focus{
-  border: 3px solid #5204fb;
+  border: 3px solid #27c8a4;
 }
 
 .back-generate-btns{
@@ -194,10 +194,10 @@
   width: 300px;
   height:40px;
   border-radius: 5px;
-  border : 1px solid rgb(187, 184, 184);
 }
 .back-btn{
   background-color: rgb(251, 250, 250);
+  border : 3px solid rgb(187, 184, 184);
 }
 
 .back-btn a{
@@ -210,6 +210,27 @@
 .generate-quiz-btn{
   font-size: 16px;
   color:aliceblue;
-  background:linear-gradient( to right, #5b12f7, #8149f9);
+  background:linear-gradient( to right, #27c8a4);
   border-radius: 5px;
+  border:none;
+}
+@media(max-width:730px){
+.quiz-option-sec,.content-input-sec{
+  width:370px;
+}
+.quiz-options{
+  flex-wrap: wrap;
+}
+.quiz-options div{
+  width:335px;
+}
+.header{
+  width:380px;
+  text-align: center;
+}
+.back-generate-btns button{
+  width: 150px;
+  height:40px;
+}
+
 }
