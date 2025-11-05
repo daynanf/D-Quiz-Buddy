@@ -12,13 +12,14 @@ secondary ---#9fdee8
 6th ---#fc9e84
  */
 
-
-body,main {
+body{
+  font-family:'roboto', sans-serif;
+}
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family:'roboto', sans-serif;
 }
 .header-container{
   width:100%;
@@ -29,7 +30,6 @@ body,main {
   background-color: rgba(rgb(255, 255, 255), 0.95); 
   z-index:50;
   backdrop-filter: blur(8px);
-
 }
 
 nav{
@@ -66,7 +66,7 @@ nav ui li{
 }
 .signup-btn{
   color:aliceblue;
-  background:linear-gradient( to right, #27c8a4
+  background:linear-gradient( to right, #fcc15b
 );
   border-radius: 5px;
 }
@@ -148,7 +148,7 @@ a{
   display:block;
   height: 100%;
   color:aliceblue;
-  background:linear-gradient( to right, #27c8a3);
+  background:linear-gradient( to right, #fcc15b);
   border-radius: 7px;
   width:19rem;
   font-size: 1.5rem;
@@ -206,7 +206,7 @@ i{
   margin:2rem 0rem;
   width:56rem;
   height: 15.6rem;
-  background:linear-gradient( to right, #02ee97);
+  background:linear-gradient( to right, #27c8a4);
   border-radius: 10px;
   display:flex;
   flex-direction: column;
