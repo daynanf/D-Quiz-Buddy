@@ -214,6 +214,9 @@
   border-radius: 5px;
   border:none;
 }
+.quiz-option-sec,.content-input-sec{
+  background-color: #eef2ed;
+}
 @media(max-width:730px){
 .quiz-option-sec,.content-input-sec{
   width:370px;
