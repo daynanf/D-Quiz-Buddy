@@ -66,6 +66,7 @@
   border: 3px solid rgb(221, 221, 221);
   border-radius: 5px;
   outline:none;
+  cursor: pointer;
 }
 .quiz-options select:focus{
   border: 3px solid #27c8a4;
@@ -77,6 +78,7 @@
   width: 700px;
   border-radius: 5px;
 }
+
 .content-input-sec i{
   background-color: white;
   color:rgb(40, 40, 40);
@@ -106,7 +108,6 @@
   width: 331px;
   height: 35px;
   margin:auto auto;
-  background-color: rgb(254, 254, 254);
   border: none;
   border-radius: 5px;
   display: flex;
@@ -114,13 +115,21 @@
   align-items: center;
   gap: 5px;
   font-size: 14px;
+  cursor:pointer;
 }
 .input-type button i{
   font-size: 16px;
 }
-/* .content-upload{
- 
-} */
+.input-type button:hover{
+  scale:0.95;
+  transition:ease-in-out 0.2s;
+}
+.file-upload-type{
+  background-color:white;
+}
+.text-type{
+  background-color: #eef2ed;
+}
 #drag-drop-label{
   height: 200px;
   margin: 10px 25px; 
@@ -139,6 +148,7 @@
   align-items: center;
   justify-items: space-around;
   color:#777;
+  cursor: pointer;
 }
 .drag-drop-section i{
   color:inherit;
@@ -160,6 +170,7 @@
   background-color: aliceblue;
 }
 .enter-text{
+  display:none;
   height: 200px;
   margin:  10px 25px;
 }
@@ -198,6 +209,7 @@
 .back-btn{
   background-color: rgb(251, 250, 250);
   border : 3px solid rgb(187, 184, 184);
+  cursor: pointer;
 }
 
 .back-btn a{
@@ -213,6 +225,7 @@
   background:linear-gradient( to right, #27c8a4);
   border-radius: 5px;
   border:none;
+  cursor: pointer;
 }
 .quiz-option-sec,.content-input-sec{
   background-color: #eef2ed;
