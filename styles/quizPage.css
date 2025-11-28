@@ -1,11 +1,14 @@
 section{
   width:650px;
-
+}
+.prog-sec{
+  margin-bottom: 30px;
 }
 .prog-time{
+  
   display:flex;
  justify-content: space-between;
- margin:10px 0;
+ margin:30px 0px ;
 }
 .que-ans{
   display:flex;
@@ -20,9 +23,12 @@ section{
   box-shadow: 0px 0px -2px 5px #cde0c5;
   border-radius: 10px;
   padding:10px;
+  margin-bottom: 20px;
+  min-height:50vh;
 }
 .q-sec h3{
   margin-bottom:10px;
+  font-size: 18px;
 }
 .choice{
   display:flex;
@@ -30,8 +36,37 @@ section{
   align-items: flex-start;
   gap:10px;
   margin: 0 24px;
+  
+}
+input{
+  border: #cde0c5 solid 2px;
+  margin-bottom: 10px;
+  width:100%;
+  
 }
 .prev-next-sec{
   display:flex;
   justify-content: space-between;
+}
+.q-nums{
+  display: flex;
+  gap:10px;
+}
+.q-nums button{
+  width: 30px;
+  border-radius: 50%; 
+  border: none;
+}
+.pre-next-btn{
+  border-radius: 15px ;
+  border: none;
+}
+.time-c{
+  display:flex;
+  gap:7px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.time-icon{
+  width:20px;
 }
